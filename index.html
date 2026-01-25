@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/box.css" />
+    <title>Cifra de César</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Codificador de Cifra de César</h1>
+
+      <div class="textBox" id="codifica">
+        <textarea name="sla" id="entrada"></textarea>
+      </div>
+      <div class="textBox" id="decodifica"><p id="texto"></p></div>
+
+      <div id="caixa">
+        <div id="caixa2">
+          <p>Deslocamento (max 26)</p>
+          <input
+            type="number"
+            min="1"
+            max="26"
+            step="1"
+            value="1"
+            id="quantidade"
+            class="info"
+          />
+        </div>
+        <button id="botao" class="info">
+          <b>Codificar</b>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/script.js" type="module"></script>
+</html>

@@ -1,0 +1,153 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+
+.textBox {
+  height: 60%;
+  width: 100%;
+
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 110%;
+
+  background-color: rgba(164, 164, 164, 0.45);
+  border-radius: 10px;
+  border: 2px solid rgb(127, 195, 131);
+}
+#entrada {
+  height: 100%;
+  width: 100%;
+  font-size: large;
+
+  color: rgb(12, 12, 12);
+  font-family: "Montserrat", sans-serif;
+
+  background-color: transparent;
+  border: none;
+
+  outline: none;
+}
+
+#caixa {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 50%;
+
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  color: rgb(0, 39, 5);
+  background: transparent;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+
+  font-size: 15px;
+}
+#caixa2 {
+  height: 50%;
+  width: 100%;
+}
+
+#quantidade {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  font-size: medium;
+}
+#quantidade:focus {
+  outline: none;
+}
+
+#botao {
+  height: 40%;
+  width: 100%;
+  cursor: pointer;
+
+  font-size: medium;
+}
+
+.info {
+  border-radius: 10px;
+  border: 2px solid rgb(127, 195, 131);
+  background: rgba(127, 195, 132, 0.488);
+  color: rgb(0, 39, 5);
+}
+
+@media (min-width: 425px) {
+  #botao {
+    width: 80%;
+  }
+  #quantidade {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .textBox {
+    width: 80%;
+    height: 80%;
+  }
+  #caixa {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #caixa2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  #botao {
+    width: 50%;
+  }
+  #quantidade {
+    width: 100%;
+    height: 40%;
+    bottom: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .textBox {
+    width: 60%;
+  }
+  #botao {
+    width: 50%;
+  }
+  #quantidade {
+    width: 100%;
+  }
+  #caixa {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  #caixa2 {
+    width: 50%;
+  }
+}
+@media (min-width: 2560px) {
+  .textBox {
+    width: 60%;
+  }
+  h1 {
+    font-size: 100px;
+  }
+  #entrada {
+    font-size: 130%;
+  }
+  #quantidade {
+    font-size: 130%;
+  }
+  p {
+    font-size: 130%;
+  }
+  #botao {
+    font-size: 130%;
+  }
+}
