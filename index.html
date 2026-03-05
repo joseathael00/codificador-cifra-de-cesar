@@ -16,14 +16,14 @@
   </head>
   <body>
     <h1>cifra de césar</h1>
-     <p id="dispText">Deslocamento(máx 26)</p>
     <div id="container">
       <div id="textContainer">
         <textarea rows="30" cols="60" id="cipherArea"></textarea>
         <textarea rows="30" cols="60" id="decipherArea"></textarea>
       </div>
-
+      
       <div id="btnContainer">
+        <label for="displacement" id="dispText">Deslocamento(máx 26)</label>
         <input type="number" id="displacement" min="1" max="26" step="1" value="1"></input>
         <button id="cipherBtn">codificar</button>
         <button id="decipherBtn">decodificar</button>
