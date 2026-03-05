@@ -4,10 +4,7 @@ export default function caesarToText(text, displacement) {
   for (let letter of text) {
     let ascii = letter.charCodeAt(0);
 
-    if (ascii == 32) {
-      // espaço
-      result.push(" ");
-    } else if (ascii >= 65 && ascii <= 90) {
+    if (ascii >= 65 && ascii <= 90) {
       // maiúsculas
       let position = ascii - 65;
       let newPosition = (position - displacement + 26) % 26;
