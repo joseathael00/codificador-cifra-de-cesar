@@ -3,35 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/box.css" />
+    <link rel="stylesheet" href="styles/textContainer.css" />
+    <link rel="stylesheet" href="styles/btnContainer.css" />
     <title>Cifra de César</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Codificador de Cifra de César</h1>
-
-      <div class="textBox" id="codifica">
-        <textarea name="sla" id="entrada"></textarea>
+    <h1>cifra de césar</h1>
+     <p id="dispText">Deslocamento(máx 26)</p>
+    <div id="container">
+      <div id="textContainer">
+        <textarea rows="30" cols="60" id="cipherArea"></textarea>
+        <textarea rows="30" cols="60" id="decipherArea"></textarea>
       </div>
-      <div class="textBox" id="decodifica"><p id="texto"></p></div>
 
-      <div id="caixa">
-        <div id="caixa2">
-          <p>Deslocamento (max 26)</p>
-          <input
-            type="number"
-            min="1"
-            max="26"
-            step="1"
-            value="1"
-            id="quantidade"
-            class="info"
-          />
-        </div>
-        <button id="botao" class="info">
-          <b>Codificar</b>
-        </button>
+      <div id="btnContainer">
+        <input type="number" id="displacement" min="1" max="26" step="1" value="1"></input>
+        <button id="cipherBtn">codificar</button>
+        <button id="decipherBtn">decodificar</button>
       </div>
     </div>
   </body>
