@@ -37,7 +37,56 @@
   grid-area: item3;
 }
 #dispText {
-  bottom: 172px;
+  bottom: 102%;
+  left: 26%;
   color: #034618;
   position: absolute;
+  align-self: center;
+}
+@media (min-width: 768px) {
+  #btnContainer {
+    grid-template-columns: 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item2 item1 item3";
+    height: 12%;
+  }
+  #dispText {
+    bottom: 105px;
+  }
+}
+@media (min-width: 1024px) {
+  #btnContainer {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #btnContainer {
+    width: 64%;
+  }
+}
+@media (min-width: 2560px) {
+  #displacement,
+  #cipherBtn,
+  #decipherBtn {
+    font-size: 23px;
+  }
+  #dispText {
+    bottom: 200px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 430px) {
+  #dispText {
+    left: 30%;
+  }
+}
+@media (min-width: 768px) {
+  #dispText {
+    left: 39.5%;
+  }
+}
+@media (min-width: 820px) {
+  #dispText {
+    bottom: 102%;
+  }
 }

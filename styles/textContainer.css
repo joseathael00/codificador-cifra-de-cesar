@@ -1,6 +1,6 @@
 #textContainer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 5fr;
   grid-template-rows: 1fr 1fr;
 
   justify-content: center;
@@ -25,4 +25,23 @@
   background-color: #cde3cd;
   border: 2.5px solid #017024;
   border-radius: 10px;
+}
+@media (min-width: 768px) {
+  #textContainer {
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 1fr;
+
+    height: 70%;
+    gap: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #textContainer {
+    height: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #textContainer {
+    width: 85%;
+  }
 }
