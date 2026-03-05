@@ -1,54 +1,46 @@
-@import url(https://fonts.google.com/specimen/Montserrat);
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 body {
   display: flex;
-  height: 120dvh;
-  width: 100%;
+  flex-direction: column;
+
+  height: 100dvh;
+  width: 100dvw;
 
   justify-content: center;
   align-items: center;
+  align-content: center;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
 
-  background: #338518;
-  background: radial-gradient(
-    circle,
-    rgba(51, 133, 24, 1) 0%,
-    rgba(73, 150, 71, 1) 18%,
-    rgba(107, 153, 98, 1) 51%,
-    rgba(143, 143, 143, 1) 100%
+  background: #bbe4b9;
+  background: linear-gradient(
+    180deg,
+    rgba(187, 228, 185, 1) 0%,
+    rgba(160, 218, 158, 1) 46%,
+    rgba(194, 216, 193, 1) 73%,
+    rgba(194, 219, 193, 1) 100%
   );
 }
+h1 {
+  color: #004516;
+  border: #058a0078;
 
-.container {
+  align-self: center;
+  text-transform: capitalize;
+  padding-bottom: 3px;
+}
+#container {
   display: flex;
   flex-direction: column;
 
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  text-align: center;
+
   gap: 10px;
 
-  height: 95%;
-  width: 95%;
-  border-radius: 10px;
-}
-.container h1 {
-  background: linear-gradient(
-    0deg,
-    rgba(33, 33, 33, 1) 0%,
-    rgba(10, 194, 0, 1) 100%
-  );
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-@media (max-width: 1024px) {
+  height: 80dvh;
+  width: 95dvw;
 }

@@ -1,0 +1,43 @@
+#btnContainer {
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  position: relative;
+
+  grid-template-areas:
+    "item1 item1"
+    "item2 item3";
+
+  width: 100%;
+  height: 25%;
+
+  gap: 5px;
+}
+#displacement,
+#cipherBtn,
+#decipherBtn {
+  background-color: #adf0ab;
+  border: 2.4px solid #017024;
+  color: #034618;
+  border-radius: 10px;
+
+  font-weight: 12000;
+  font-size: 16px;
+  outline: none;
+}
+
+#displacement {
+  grid-area: item1;
+  text-align: center;
+}
+#cipherBtn {
+  grid-area: item2;
+}
+#decipherBtn {
+  grid-area: item3;
+}
+#dispText {
+  bottom: 172px;
+  color: #034618;
+  position: absolute;
+}

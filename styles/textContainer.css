@@ -1,0 +1,28 @@
+#textContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 70%;
+  width: 100%;
+
+  gap: 7px;
+}
+#cipherArea,
+#decipherArea {
+  padding: 10px;
+  box-sizing: border-box;
+
+  resize: none;
+  outline: none;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: #cde3cd;
+  border: 2.5px solid #017024;
+  border-radius: 10px;
+}
