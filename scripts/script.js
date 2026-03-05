@@ -1,11 +1,18 @@
-import codificar from "./codifica.js";
-const input = document.getElementById("entrada");
-const quantidade = document.getElementById("quantidade");
-const botao = document.querySelector("#botao");
-const paragrafo = document.getElementById("texto");
+import textToCaesar from "./codifica.js";
+import caesarToText from "./decodifica.js";
 
-botao.addEventListener("click", () => {
-  const valor = codificar(input.value, +quantidade.value);
-  texto.textContent = valor;
-  input.value = "";
+const cipher = document.getElementById("cipherBtn");
+const decipher = document.getElementById("decipherBtn");
+const displacement = document.getElementById("displacement");
+
+const cipherArea = document.getElementById("cipherArea");
+const decipherArea = document.getElementById("decipherArea");
+
+cipher.addEventListener("click", () => {
+  decipherArea.value = `${textToCaesar(cipherArea.value, +displacement.value)}`;
+  cipherArea.value = "";
+});
+decipher.addEventListener("click", () => {
+  cipherArea.value = `${caesarToText(decipherArea.value, +displacement.value)}`;
+  decipherArea.value = "";
 });

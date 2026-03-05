@@ -1,19 +1,22 @@
-export default function textToCaesar(text, displacement) {
+export default function caesarToText(text, displacement) {
   let result = [];
 
   for (let letter of text) {
     let ascii = letter.charCodeAt(0);
 
     if (ascii == 32) {
+      // espaço
       result.push(" ");
     } else if (ascii >= 65 && ascii <= 90) {
+      // maiúsculas
       let position = ascii - 65;
-      let newPosition = (position + displacement) % 26;
+      let newPosition = (position - displacement + 26) % 26;
       let newAscii = newPosition + 65;
       result.push(String.fromCharCode(newAscii));
     } else if (ascii >= 97 && ascii <= 122) {
+      // minúsculas
       let position = ascii - 97;
-      let newPosition = (position + displacement) % 26;
+      let newPosition = (position - displacement + 26) % 26;
       let newAscii = newPosition + 97;
       result.push(String.fromCharCode(newAscii));
     } else {
@@ -23,6 +26,3 @@ export default function textToCaesar(text, displacement) {
 
   return result.join("");
 }
-
-// Teste
-console.log(textToCaesar("Olá", 3)); // "Rl"
